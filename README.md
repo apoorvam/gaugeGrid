@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ## About this template
 
 This is a template to get started with a Gauge project that uses Selenium as the driver to interact with a web browser.
@@ -31,3 +32,7 @@ Read more about [Step implementations in Java](http://getgauge.io/documentation/
 ```
 mvn gauge:execute
 ```
+=======
+# gaugeGrid
+Gauge tests with Selenium Grid
+>>>>>>> 82c138e971af1242e748ab559de97fc733a88be4
