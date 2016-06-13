@@ -1,6 +1,4 @@
-# gaugeGrid
-
-Gauge tests with Selenium Grid
+# Gauge with Selenium Grid
 
 This is a sample Gauge project that uses Selenium as the driver to interact with a web browser. It uses Selenium Grid to run tests on multiple browsers.
 ## Running this example
