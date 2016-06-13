@@ -3,8 +3,6 @@ package driver;
 import com.thoughtworks.gauge.*;
 import org.openqa.selenium.WebDriver;
 
-import java.net.MalformedURLException;
-
 public class Driver {
 
     // Holds the WebDriver instance
