@@ -1,10 +1,8 @@
 # Gauge with Selenium Grid
 
 This is a sample Gauge project that uses Selenium as the driver to interact with a web browser. It uses Selenium Grid to run tests on multiple browsers.
-## Running this example
-The tests are run on Firefox by default.
 
-### Prerequisites
+## Prerequisites
 
 This example requires the following softwares to run.
   * [Java 1.7](http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html) or above
@@ -15,7 +13,7 @@ This example requires the following softwares to run.
   * Firefox/Chrome
 
 
-### Setting the Selenium Grid
+## Setting the Selenium Grid
 
 * Download the Selenium Server [here](http://docs.seleniumhq.org/download/)
 
@@ -33,7 +31,7 @@ You can use the free port of choice.
 
 To check web console, go to http://localhost:4444/grid/console
 
-### Run specs
+## Run specs
 
 * Clone repository and run
 
