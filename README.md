@@ -1,38 +1,56 @@
-<<<<<<< HEAD
-## About this template
-
-This is a template to get started with a Gauge project that uses Selenium as the driver to interact with a web browser.
-
-## Installing this template
-
-    gauge --install java_maven_selenium
-
-## Building on top of this template
-
-### Defining Specifications
-
-* This template includes a sample specification which opens up a browser and navigates to `Get Started` page of Gauge.
-* Add more specifications on top of sample specification.
-
-Read more about [Specifications](http://getgauge.io/documentation/user/current/specifications/README.html)
-
-### Writing the implementations
-
-This is where the java implementation of the steps would be implemented. Since this is a Selenium based project, the java implementation would invoke Selenium APIs as required.
-
-_We recommend considering modelling your tests using the [Page Object](https://github.com/SeleniumHQ/selenium/wiki/PageObjects) pattern, and the [Webdriver support](https://github.com/SeleniumHQ/selenium/wiki/PageFactory) for creating them._
-
-- Note that every Gauge step implementation is annotated with a `Step` attribute that takes the Step text pattern as a parameter.
-Read more about [Step implementations in Java](http://getgauge.io/documentation/user/current/test_code/java/java.html)
-
-### Execution
-
-* You can execute the specification as:
-
-```
-mvn gauge:execute
-```
-=======
 # gaugeGrid
+
 Gauge tests with Selenium Grid
->>>>>>> 82c138e971af1242e748ab559de97fc733a88be4
+
+This is a sample Gauge project that uses Selenium as the driver to interact with a web browser. It uses Selenium Grid to run tests on multiple browsers.
+## Running this example
+The tests are run on Firefox by default.
+
+### Prerequisites
+
+This example requires the following softwares to run.
+  * [Java 1.7](http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html) or above
+    * Note that Gauge works with Java 1.6 and above. But this particular example uses Java 1.7
+  * [Gauge](http://getgauge.io/get-started/index.html)
+  * Gauge Java plugin
+    * can be installed using `gauge --install java`
+  * Firefox/Chrome
+
+
+### Setting the Selenium Grid
+
+* Download the Selenium Server [here](http://docs.seleniumhq.org/download/)
+
+To set up the Hub, run
+```
+java -jar <path_to_selenium_server_jar> -role hub
+```
+This uses port 4444 by default for its web interface.
+
+To set up a node, run
+```
+java -jar <path_to_selenium_server_jar> -role webdriver -hub http://localhost:4444/grid/register/ -port 5566
+```
+You can use the free port of choice.
+
+To check web console, go to http://localhost:4444/grid/console
+
+### Run specs
+
+* Clone repository and run
+
+```
+mvn test
+```
+This runs the sample specs using the firefox driver by default. To use a different browser, set the environment property `BROWSER` in `project_dir/env/user.properties`.
+
+```
+BROWSER = chrome
+```
+
+
+
+
+
+
+
