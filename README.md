@@ -1,6 +1,7 @@
 # Gauge with Selenium Grid
 
 This is a sample Gauge project that uses Selenium as the driver to interact with a web browser. It uses Selenium Grid to run tests on multiple browsers.
+This can also be used to do run your tests remotely, in different browsers, different platforms or even different versions of browsers.
 
 ## Prerequisites
 
@@ -9,7 +10,7 @@ This example requires the following softwares to run.
   * [Gauge](http://getgauge.io/get-started/index.html)
   * Gauge Java plugin
     * can be installed using `gauge --install java`
-  * Firefox/Chrome
+  * Firefox(>= v46)/Chromedriver in PATH
 
 
 ## Setting the Selenium Grid

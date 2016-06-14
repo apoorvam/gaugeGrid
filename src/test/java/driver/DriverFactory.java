@@ -14,13 +14,14 @@ public class DriverFactory {
         DesiredCapabilities capabilities = DesiredCapabilities.firefox();
         String browser = System.getenv("BROWSER");
         if (browser == null)  {
-            capabilities.setBrowserName("firefox");
+            capabilities.setBrowserName("firefox"); //default
         }
 
         capabilities.setBrowserName(browser);
         RemoteWebDriver driver = null;
         try {
-            driver = new RemoteWebDriver(new URL("http://localhost:4444/wd/hub"), capabilities);
+            String selenium_hub_ip = System.getenv("SELENIUM_HUB_IP");
+            driver = new RemoteWebDriver(new URL(selenium_hub_ip), capabilities);
         } catch (MalformedURLException e) {
             e.printStackTrace();
         }
