@@ -1,7 +1,7 @@
 # Gauge with Selenium Grid
 
 This is a sample Gauge project that uses Selenium as the driver to interact with a web browser. It uses Selenium Grid to run tests on multiple browsers.
-This can also be used to do run your tests remotely, in different browsers, different platforms or even different versions of browsers.
+This can also be used to run tests remotely, in different browsers, different platforms or even different versions of browsers.
 
 ## Prerequisites
 
@@ -30,6 +30,8 @@ java -jar <path_to_selenium_server_jar> -role webdriver -hub http://localhost:44
 You can use the free port of choice.
 
 To check web console, go to [http://localhost:4444/grid/console](http://localhost:4444/grid/console)
+
+If you are running hub and nodes in different machines, `localhost` should be replaced with IP address of hub. This should also be updated in `project_dir/env/user.properties`.
 
 ## Run specs
 
