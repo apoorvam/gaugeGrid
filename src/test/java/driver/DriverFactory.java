@@ -18,6 +18,7 @@ public class DriverFactory {
         }
 
         capabilities.setBrowserName(browser);
+        capabilities.setCapability("takesScreenshot", "true");
         RemoteWebDriver driver = null;
         try {
             String selenium_hub_ip = System.getenv("SELENIUM_HUB_IP");

@@ -40,7 +40,10 @@ If you are running hub and nodes in different machines, `localhost` should be re
 ```
 mvn test
 ```
-This runs the sample specs using the firefox driver by default. To use a different browser, set the environment property `BROWSER` in `project_dir/env/user.properties`.
+This runs the sample specs using the firefox driver by default. To run tests in Chrome browser, pass the `-Dwebdriver.firefox.bin="<path_to_chrome_driver>"` flag to selenium node.
+Then run specs using `mvn test -Denv="chrome"`
+
+To use a different browser, set the environment property `BROWSER` in `project_dir/env/user.properties`.
 
 ```
 BROWSER = chrome
