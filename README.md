@@ -15,7 +15,7 @@ This example requires the following softwares to run.
 
 ## Setting the Selenium Grid
 
-* Download the Selenium Server [here](http://docs.seleniumhq.org/download/)
+* Download the latest version of Selenium Server [here](http://docs.seleniumhq.org/download/). Or, you can use the selenium server jar v2.53.1 present in `resources` directory of this repository.
 
 To set up the Hub, run
 ```
