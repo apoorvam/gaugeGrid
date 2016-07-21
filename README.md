@@ -1,4 +1,5 @@
 # Gauge with Selenium Grid
+[![Build Status](https://snap-ci.com/apoorvam/gaugeGrid/branch/master/build_image)](https://snap-ci.com/apoorvam/gaugeGrid/branch/master)
 
 This is a sample [Gauge](http://getgauge.io/) project that uses Selenium as the driver to interact with a web browser. It uses Selenium Grid to run tests on multiple browsers.
 This can also be used to run tests remotely, in different browsers, different platforms or even different versions of browsers.
